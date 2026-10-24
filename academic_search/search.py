@@ -11,7 +11,7 @@ import json
 import re
 from datetime import date
 from pathlib import Path
-from urllib.parse import quote_plus, urlparse
+from urllib.parse import quote, quote_plus, urlparse
 
 PROFILE = Path(__file__).with_name("profile.json")
 
@@ -71,7 +71,7 @@ def score_job(job: dict, profile: dict, today: date | None = None) -> dict:
     is_very_senior = bool(re.search(r"\b(dean|director|full professor|chair professor)\b", lower_title))
     is_assistant = bool(re.search(r"\b(assistant professor|tenure.track|lecturer|faculty)\b", lower_title))
     is_associate = "associate professor" in lower_title
-    is_researcher = bool(re.search(r"\b(research scientist|research fellow|postdoc|post.doctoral)\b", lower_title))
+    is_researcher = bool(re.search(r"\b(research scientist|research fellow|postdoc|postdoctoral|post.doctoral)\b", lower_title))
     level = 95 if is_assistant else 65 if is_associate else 70 if is_researcher else 25
     if is_trainee or is_very_senior:
         level = 5
@@ -161,8 +161,8 @@ def markdown_report(jobs: list[dict], asof: date | None = None) -> str:
     ]
     for job in jobs:
         def cell(value: object) -> str:
-            return str(value or "Unknown").replace("|", r"\|").replace("\n", " ")
-        role = ("[" + cell(job["title"]) + "](" + job["url"] + ")"
+            return (str(value or "Unknown").replace("|", r"\|").replace("\n", " ")\n                    .replace("[", r"\[").replace("]", r"\]"))
+        role = ("[" + cell(job["title"]) + "](" +\n                quote(job["url"], safe=":/?&=%#@+-_.~") + ")"
                 if valid_url(job["url"]) else cell(job["title"]))
         out.append("| " + " | ".join([
             str(job["score"]), cell(job["status"]), role,
