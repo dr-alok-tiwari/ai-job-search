@@ -1,90 +1,98 @@
-# Search Queries for Job Scraper
+# Academic Faculty and AI Job Searches (CV-based: October 2026)
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
+Search strategy for /scrape. This supersedes the upstream Danish-market
+demo queries. Use primary search categories first; /scrape broad covers all.
+The installed LinkedIn-search and freehire-search skills can complement
+WebSearch, but freehire is technical/industry heavy and not a substitute for
+official IIM/IIT vacancy notices.
 
-## Installed portal CLIs (primary for `/scrape`)
+**Source hierarchy:** individual institution's current recruitment PDF/page
+and actual application page > reputable academic job boards > search engine
+snippets. A search snippet is a lead, **not** a confirmed live vacancy.
 
-`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Danish demos and any skill you add with `/add-portal` are included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
+## Priority 1: India — Management Faculty (Information Systems / Analytics)
 
-The `site:` query templates in this file are the **WebSearch fallback** — for portals without a CLI, company career pages, or when a CLI fails.
+Jobs: Assistant Professor / Grade I or Grade II (subject to the institute's
+actual advertised criteria); selective Associate Professor only on fully
+verified eligibility. Area aliases: Information Systems, Big Data Analytics,
+AI for Business, Digital Strategy, Operations & Decision Sciences, Decision
+Support, Business Analytics, MIS.
 
-**Language scope:** write every query category in every language listed in your CLAUDE.md Languages table (typically 1-2, sometimes more). A posting requiring a language you have *not* declared, as a job condition, is excluded before scoring; a posting requiring a *higher level* than you declared in a language you *do* work in is flagged for your own judgment, not excluded — see `04-job-evaluation.md`'s Language Gate, the single source of truth for this rule. Translate each category's keywords rather than machine-translating word-for-word (e.g. "Frontend Developer" -> "Desarrollador Frontend", not a literal word-for-word translation) if you work in more than one language.
+Queries:
+
+~~~
+("IIM" OR "Indian Institute of Management") ("faculty recruitment" OR "assistant professor") ("information systems" OR "analytics")
+"IIM" "faculty recruitment" "AI" "analytics" 2026
+site:iimidr.ac.in "faculty" "information systems"
+site:iiml.ac.in "faculty recruitment" "information systems"
+site:iimk.ac.in "faculty recruitment" "information systems"
+site:iift.ac.in "faculty recruitment" "information systems"
+("XLRI" OR "MDI" OR "SPJIMR" OR "IIFT") ("faculty" OR "assistant professor") ("analytics" OR "information systems")
+~~~
+
+## Priority 2: India — IIT/IIIT/NIT AI, ML, Healthcare AI
+
+Search assistant professor / faculty notices in DMS/VGSOM/management
+departments, computer science/data science schools and biomedical
+engineering / medical AI interdisciplinary programs. Be strict about
+discipline eligibility and post-PhD publication requirements.
+
+~~~
+site:iitd.ac.in "assistant professor" ("analytics" OR "management" OR "healthcare")
+site:iitkgp.ac.in "faculty" ("management" OR "artificial intelligence")
+site:iitb.ac.in "faculty recruitment" ("data science" OR "AI")
+site:iitbhu.ac.in "faculty recruitment" ("biomedical engineering" OR "AI")
+("IIIT" OR "NIT") ("assistant professor" OR "faculty recruitment") ("AI" OR "data science")
+("Lucknow" OR "Prayagraj" OR "Bhopal" OR "Indore") ("assistant professor" OR "faculty") ("machine learning" OR "business analytics")
+~~~
+
+## Priority 3: International — Research-active Faculty
+
+Titles: assistant professor, tenure-track assistant professor, lecturer,
+junior professor, teaching-and-research faculty, researcher (selective).
+Fields: AI / ML, business analytics, information systems, digital
+transformation, healthcare informatics, medical imaging, responsible AI.
+
+~~~
+site:euraxess.ec.europa.eu/jobs ("machine learning" OR "health informatics") ("professor" OR "researcher")
+site:jobs.ac.uk ("lecturer" OR "assistant professor") ("machine learning" OR "business analytics")
+site:academicpositions.com ("assistant professor" OR "lecturer") ("artificial intelligence" OR "information systems")
+site:higheredjobs.com ("assistant professor" OR "tenure track") ("information systems" OR "data science")
+("Singapore" OR "UAE" OR "Dubai") ("assistant professor" OR "faculty") ("AI" OR "analytics")
+~~~
+
+## Priority 4: Adjacent Research / Applied AI
+
+~~~
+("research scientist" OR "research fellow") ("medical imaging" OR "healthcare AI" OR "NLP")
+("assistant professor" OR "faculty") "digital health" "machine learning"
+("AI research scientist" OR "ML research scientist") ("healthcare" OR "decision support")
+~~~
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+- Direct recruitment pages of the employing IIM, IIT, IIIT, NIT,
+  university or business school — **primary evidence**.
+- https://euraxess.ec.europa.eu/jobs/search — European research roles.
+- https://www.jobs.ac.uk/ — UK/international academia.
+- https://academicpositions.com/ — academic positions globally.
+- https://www.higheredjobs.com/ — US and other higher education.
+- https://www.timeshighereducation.com/unijobs/ — international university.
+- LinkedIn jobs search skill: India, Singapore, UAE, UK and other selected
+  countries; always verify role status on official employer page.
 
-Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+## Matching / Exclusion Rules
 
-## Query Categories
-
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
-
-**Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
-
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
-
-These match your strongest and most desired career direction.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
-
-```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
-```
-
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
-
-Adjacent roles you could pivot into.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
-```
-
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
-
-```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
-```
-
-## Location Filter
-
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
-
-## Language Filter
-
-Your working languages and levels are in CLAUDE.md's Languages table. When filtering scraped results, apply `04-job-evaluation.md`'s Language Gate: a posting requiring a language you haven't declared at all is excluded; a posting requiring a higher level than you declared in a language you do work in is not excluded, flag it clearly instead (see `job-scraper/SKILL.md`'s Step 3 "Quick Fit Assessment" for how the flag surfaces in `/scrape` output). Postings simply *written* in a language you don't work in, that don't require it on the job, are fine.
-
-## Date Filter
-
-Only include jobs posted within the last 14 days, or with an application deadline that has not yet passed. If a posting date cannot be determined, include it but flag as "date unknown".
-
-## Adapting Queries
-
-If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+1. Resolve each **posting-specific URL**, employer, country and deadline.
+   Do not manufacture application links or infer deadline from snippets.
+2. Use posted-within-14-days OR future-deadline leads for review; an old
+   listing is not automatically live merely because the date is missing.
+3. Undergraduate internships, PhD studentships and entry-level research
+   assistant roles are not career-equivalent faculty opportunities.
+4. Associate Professor is a **conditional** target. PhD awarded Jul 2023;
+   verify all specified post-PhD years, papers, venue categories and pay band.
+5. International visa/work authorization and language conditions are
+   independently verified. Do not exclude merely because relocation is needed.
+6. Write no personal CV, contact, family constraints or application records
+   into public tracked files. Generated rankings remain gitignored.
+7. Distinguish verified openings from unverified search leads in every table.

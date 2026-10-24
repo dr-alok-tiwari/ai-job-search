@@ -8,6 +8,9 @@ framework_version: 1.2.7
 
 ## Eligibility Gate — run before scoring
 
+**Academic-specific checks:** PhD July 2023 does not make faculty appointments from March 2022 post-PhD service. Verify every institution's published grade, age, post-PhD years, peer-reviewed-paper indexes and qualification criteria; pre-submission pipeline manuscripts are not publications. Never presume foreign work authorization.
+
+
 If the candidate is not a citizen or permanent resident of the country they are applying in, run this first. It is a hard filter, not a scoring dimension, and it is separate from work-permit *timing*: timing asks "can they work the required hours yet?", eligibility asks "are they permitted to hold this job at all?". A candidate can pass timing and still be categorically excluded.
 
 Read the posting's eligibility / work rights / "who can apply" section **verbatim** and classify:
@@ -60,9 +63,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** applied ML, healthcare AI, medical imaging, computer vision, business analytics, information systems, PyTorch/TensorFlow, Python, SQL, big data.
+**Moderate match areas:** responsible AI, NLP/LLMs, AI for business, financial decision support, MLOps and data engineering.
+**Weak match areas:** Do not invent weaknesses. Identify only mandatory criteria not supported by the CV or independently confirmed publication history.
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +77,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** faculty teaching AI, ML and big data analytics; applied health AI research, postgraduate and executive teaching.
+**Moderate:** business information systems, decision sciences, responsible AI, research leadership and interdisciplinary applications.
+**Entry-level:** independent funded-PI leadership and long-term industrial ML product ownership are not established by the CV; treat as unknown.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,10 +94,10 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+- India-wide appointment, including relocation: PASS for search, assess practicality separately.
+- International appointment: FLAG work authorization, visa, pay and relocation; not automatic rejection.
+- Remote with occasional office: PASS only after teaching/research expectations are verified.
+- Frequent international travel: FLAG and confirm feasibility.
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -107,19 +110,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Research-active stable Assistant Professor/tenure-track roles in leading academic institutions.
+- Build funded research in healthcare AI and intelligent decision support.
+- Build Information Systems and responsible AI teaching/research connections.
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: Likely applied AI teaching and research; confirm preference.
+- Tasks that drain: Unknown — do not infer from CV.
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Salary requirements are unspecified/private; do not fabricate minimum compensation.
+- **Flexibility**: Notice period and schedule constraints require private confirmation.
+- **Professional development**: Publishing, doctoral supervision, funded research and postgraduate teaching.
 
 ### 6. Salary Benchmark (Optional)
 

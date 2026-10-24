@@ -1,0 +1,22 @@
+{
+  "notice": "ILLUSTRATIVE TEST DATA ONLY — THESE ARE NOT VERIFIED JOB OPENINGS",
+  "jobs": [
+    {
+      "title": "Assistant Professor, Machine Learning and Healthcare Analytics",
+      "institution": "Illustrative Institute A — not a real vacancy",
+      "location": "Lucknow, India",
+      "url": "https://example.org/fictional-posting-1",
+      "description": "Teach machine learning and healthcare analytics; publish medical imaging research",
+      "deadline": "2026-12-31",
+      "source": "illustrative example"
+    },
+    {
+      "title": "Associate Professor, Information Systems",
+      "institution": "Illustrative Institute B — not a real vacancy",
+      "location": "London, UK",
+      "url": "https://example.org/fictional-posting-2",
+      "description": "Machine learning, information systems, decision support; verify post-PhD requirements and visa sponsorship",
+      "source": "illustrative example"
+    }
+  ]
+}

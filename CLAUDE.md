@@ -1,10 +1,10 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Dr. Alok Tiwari
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Dr. Alok Tiwari, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +13,59 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
+The following is a PUBLIC-SAFE summary. Full CV/contact details and all personal
+application materials are private and must not be committed. For the detailed
+canonical candidate record, load
+.claude/skills/job-application-assistant/01-candidate-profile.md and for actual
+search keywords, load .claude/skills/job-scraper/search-queries.md.
+Do not rerun /setup against this public repository with a private CV; instead
+make a private copy first.
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:**
-  | Language | Level |
-  |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+- **Name:** Dr. Alok Tiwari
+- **Base:** Goa, India; consider national and international relocation.
+- **Current post:** Assistant Professor, Big Data Analytics, Goa Institute of Management.
+- **Languages:** English (full professional proficiency), Hindi (native).
+- **Contact:** Available only from a locally stored private CV.
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+### Education and Experience
+- **PhD, Biomedical Engineering:** IIT (BHU), completed July 2023.
+- **MTech, Biomedical Engineering:** NIT Kurukshetra (2016).
+- **BTech, ECE:** Gautam Buddha Technical University (2012).
+- **Faculty appointments:** INSOFE (Mar 2022–Jan 2023);
+  ATLAS SkillTech University (Feb–Dec 2023);
+  Goa Institute of Management (Jan 2024–present).
+- The full faculty experience period is NOT all post-PhD. Apply each
+  institute's exact post-PhD tenure cutoff rules.
 
-### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+### Research and Teaching
+- Healthcare AI, medical imaging, deep learning, transfer learning,
+  computer vision, XAI, LLMs/NLP, business analytics, big data, MLOps,
+  responsible AI, information systems and decision support.
+- Four peer-reviewed journal articles documented in the October 2026 CV.
+  Six manuscripts in submission/pre-submission pipeline; none may be
+  represented as published without independent confirmation.
+- PGDM/MBA courses, executive MDPs and faculty-development training.
 
-### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+### Target Sectors and Careers
+1. Research-active IIM/IIT management faculty in Information Systems,
+   AI & Analytics, Management Science / Decision Sciences.
+2. IIT/IIIT/NIT/university AI, DS and healthcare AI faculty.
+3. International Assistant Professor, Lecturer and Tenure-track positions
+   in ML, IS, business analytics and health informatics.
+4. Selective applied AI research-scientist and research-fellow positions.
+5. Associate Professor only after formal qualification verification.
 
-### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
-
-### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
-
-### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
-
-### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
-
-### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
-
-### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
-
-### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
-
-### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+### Constraints and Eligibility
+- India-wide and abroad searches are permitted; no hard relocation veto.
+- Overseas work authorization, language, equivalence and visa status
+  must be verified per opportunity. Never infer authorization.
+- Rank and eligibility are institute-specific; explicitly flag any
+  unverified post-PhD years, AB/DC/ABS quality, indexing and doctoral
+  supervision prerequisites.
+- Never publish private CV/contact, compensation, referees, applications
+  or search history to this public repository.
+- Nothing is auto-submitted; draft applications only with user approval.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
