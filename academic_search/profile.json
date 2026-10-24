@@ -1,0 +1,139 @@
+{
+  "profile_version": "2026-10-24",
+  "name": "Dr. Alok Tiwari",
+  "public_profile_only": true,
+  "current_role": "Assistant Professor, Big Data Analytics",
+  "current_institution": "Goa Institute of Management",
+  "education": [
+    {
+      "degree": "PhD",
+      "field": "Biomedical Engineering",
+      "institution": "IIT (BHU), Varanasi",
+      "completed": "2023-07"
+    },
+    {
+      "degree": "MTech",
+      "field": "Biomedical Engineering",
+      "institution": "NIT Kurukshetra"
+    }
+  ],
+  "experience_note": "Faculty appointments from March 2022; PhD completed July 2023. Assess any post-PhD-year rule against exact cutoff date.",
+  "research_keywords": [
+    "machine learning",
+    "artificial intelligence",
+    "deep learning",
+    "computer vision",
+    "medical imaging",
+    "healthcare analytics",
+    "health informatics",
+    "information systems",
+    "business analytics",
+    "big data",
+    "explainable ai",
+    "responsible ai",
+    "decision support",
+    "generative ai",
+    "natural language processing",
+    "mlops",
+    "financial analytics"
+  ],
+  "teaching_keywords": [
+    "business analytics",
+    "machine learning",
+    "healthcare analytics",
+    "generative ai",
+    "big data",
+    "python",
+    "sql",
+    "data engineering",
+    "mlops",
+    "statistics"
+  ],
+  "preferred_titles": [
+    "assistant professor",
+    "faculty",
+    "lecturer",
+    "research scientist",
+    "research fellow",
+    "tenure track",
+    "associate professor"
+  ],
+  "primary_location_keywords": [
+    "lucknow",
+    "prayagraj",
+    "allahabad",
+    "bhopal",
+    "sehore",
+    "kanpur",
+    "varanasi",
+    "indore",
+    "sitapur"
+  ],
+  "secondary_location_keywords": [
+    "delhi",
+    "noida",
+    "gurugram",
+    "greater noida",
+    "pune",
+    "hyderabad",
+    "bengaluru",
+    "bangalore",
+    "mumbai",
+    "goa",
+    "jaipur"
+  ],
+  "geographic_scope": [
+    "India",
+    "Europe",
+    "UK",
+    "Singapore",
+    "UAE",
+    "Canada",
+    "Australia",
+    "United States"
+  ],
+  "reference_only_publications": "Four peer-reviewed journal articles in the supplied October 2026 CV; submitted/pre-submission manuscripts are not accepted publications.",
+  "privacy": "Do not commit complete CV, email, phone, reference letters, offer details, or applications. Store all output locally.",
+  "search_queries": [
+    {
+      "label": "IIM Information Systems",
+      "query": "(\"IIM\" OR \"Indian Institute of Management\") (\"faculty recruitment\" OR \"assistant professor\") (\"information systems\" OR analytics)"
+    },
+    {
+      "label": "IIT management analytics",
+      "query": "site:ac.in (\"IIT\" OR \"Indian Institute of Technology\") (\"faculty recruitment\" OR \"assistant professor\") (\"management\" OR \"analytics\" OR \"information systems\")"
+    },
+    {
+      "label": "IIIT AI / Data Science",
+      "query": "site:ac.in (\"IIIT\" OR \"Indian Institute of Information Technology\") (\"assistant professor\" OR \"faculty recruitment\") (\"AI\" OR \"data science\")"
+    },
+    {
+      "label": "Other premier management institutes",
+      "query": "(\"XLRI\" OR \"MDI\" OR \"SPJIMR\" OR \"IIFT\" OR \"BITS\" OR \"NIT\") (\"faculty\" OR \"assistant professor\") (\"analytics\" OR \"information systems\")"
+    },
+    {
+      "label": "Healthcare AI faculty",
+      "query": "(\"assistant professor\" OR \"faculty\") (\"healthcare analytics\" OR \"health informatics\" OR \"medical AI\") India"
+    },
+    {
+      "label": "EURAXESS AI research",
+      "query": "site:euraxess.ec.europa.eu/jobs (\"machine learning\" OR \"health informatics\" OR \"medical imaging\") (\"researcher\" OR \"professor\")"
+    },
+    {
+      "label": "Academic Positions international",
+      "query": "site:academicpositions.com (\"machine learning\" OR \"artificial intelligence\" OR \"business analytics\") (\"assistant professor\" OR \"lecturer\")"
+    },
+    {
+      "label": "UK academics",
+      "query": "site:jobs.ac.uk (\"lecturer\" OR \"assistant professor\") (\"machine learning\" OR \"business analytics\" OR \"health informatics\")"
+    },
+    {
+      "label": "US / Canada academia",
+      "query": "site:higheredjobs.com (\"assistant professor\" OR \"tenure track\") (\"information systems\" OR \"data science\" OR \"analytics\")"
+    },
+    {
+      "label": "Singapore / UAE faculty",
+      "query": "(\"Singapore\" OR \"UAE\" OR \"Dubai\" OR \"Abu Dhabi\") (\"assistant professor\" OR \"faculty\") (\"AI\" OR \"data science\" OR \"information systems\")"
+    }
+  ]
+}
