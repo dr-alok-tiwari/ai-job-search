@@ -8,8 +8,8 @@
 > public-safe [academic job-search toolkit](academic_search/README.md) for
 > Dr. Alok Tiwari (IIM/IIT/IIIT faculty, healthcare AI, and international
 > research-led positions). Get targeted search links with
-> \`python3 academic_search/search.py links\` or rank a list of verified
-> postings using \`python3 academic_search/search.py rank --input jobs.csv\`.
+> `python3 academic_search/search.py links` or rank a list of verified
+> postings using `python3 academic_search/search.py rank --input jobs.csv`.
 > The original CV, contact details and generated rankings are not committed.
 > Set up the private documents on your own local clone before running /apply.
 
