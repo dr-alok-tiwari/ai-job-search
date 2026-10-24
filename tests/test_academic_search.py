@@ -54,6 +54,19 @@ class AcademicSearchTests(unittest.TestCase):
         items = rank_jobs([job(), job(title="Machine Learning Faculty")], PROFILE, self.today)
         self.assertEqual(len(items), 1)
 
+    def test_ai_acronym_counts_as_subject(self):
+        result = score_job(job(title="Assistant Professor AI", description="AI faculty"), PROFILE, self.today)
+        self.assertIn("ai", result["research_matches"])
+
+    def test_postdoctoral_is_recognized(self):
+        result = score_job(job(title="Postdoctoral Research Fellow, Medical Imaging"), PROFILE, self.today)
+        self.assertGreater(result["score"], 20)
+
+    def test_markdown_link_parentheses_encoded(self):
+        result = score_job(job(url="https://example.edu/faculty/(100)"), PROFILE, self.today)
+        report = markdown_report([result], self.today)
+        self.assertIn("%28100%29", report)
+
     def test_non_https_url_is_not_linked(self):
         self.assertFalse(valid_url("javascript:alert(1)"))
         report = markdown_report([score_job(job(url="javascript:alert(1)"), PROFILE, self.today)], self.today)
