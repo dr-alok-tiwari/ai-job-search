@@ -161,8 +161,10 @@ def markdown_report(jobs: list[dict], asof: date | None = None) -> str:
     ]
     for job in jobs:
         def cell(value: object) -> str:
-            return (str(value or "Unknown").replace("|", r"\|").replace("\n", " ")\n                    .replace("[", r"\[").replace("]", r"\]"))
-        role = ("[" + cell(job["title"]) + "](" +\n                quote(job["url"], safe=":/?&=%#@+-_.~") + ")"
+            return (str(value or "Unknown").replace("|", r"\|").replace("\n", " ")
+                    .replace("[", r"\[").replace("]", r"\]"))
+        role = ("[" + cell(job["title"]) + "](" +
+                quote(job["url"], safe=":/?&=%#@+-_.~") + ")"
                 if valid_url(job["url"]) else cell(job["title"]))
         out.append("| " + " | ".join([
             str(job["score"]), cell(job["status"]), role,
